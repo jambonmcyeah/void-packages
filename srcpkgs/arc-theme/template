@@ -2,6 +2,7 @@
 pkgname=arc-theme
 version=20170302
 revision=1
+noarch=yes
 build_style="gnu-configure"
 configure_script="./autogen.sh"
 hostmakedepends="autoconf automake pkg-config"
