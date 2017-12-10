@@ -1,0 +1,15 @@
+# Template file for 'arc-gtk-theme'
+pkgname=arc-theme
+version=20170302
+revision=1
+build_style="gnu-configure"
+configure_script="./autogen.sh"
+hostmakedepends="autoconf automake pkg-config"
+makedepends="gtk+3-devel"
+depends="gnome-themes-standard gtk-engine-murrine gtk+3 "
+short_desc="Flat theme for GTK2/GTK3/GNOME Shell"
+maintainer="Jun Bo Bi <jambonmcyeah@gmail.com>"
+license="GPL-3"
+homepage="https://github.com/horst3180/arc-theme"
+distfiles="${homepage}/archive/${version}.tar.gz"
+checksum=9ca5c1d1ac267c4ae3725e84519d42bfb8c4c6934989839ebe3cb8699fbdfd45
