@@ -1,0 +1,13 @@
+# Template file for 'papirus-icon-theme'
+pkgname=papirus-icon-theme
+version=20171124
+revision=1
+noarch=true
+build_style=gnu-makefile
+hostmakedepends="make"
+short_desc="A free and open source SVG icon theme based on Paper Icon Set"
+maintainer="Jun Bo Bi <jambonmcyeah@gmail.com>"
+license="LGPL-3"
+homepage="https://github.com/PapirusDevelopmentTeam/papirus-icon-theme"
+distfiles="${homepage}/archive/${version}.tar.gz"
+checksum=4de3a2d82e1466d4ed64853bc251e25193823bf966c7ff66a5d326a9c6bb4d35
