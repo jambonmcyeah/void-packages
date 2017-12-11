@@ -1,0 +1,13 @@
+# Template file for 'adapta-kde'
+pkgname=adapta-kde
+version=20171109
+revision=1
+noarch=true
+build_style=gnu-makefile
+hostmakedepends="make"
+short_desc="A port of the popular GTK theme Adapta for Plasma 5 desktop"
+maintainer="Jun Bo Bi <jambonmcyeah@gmail.com>"
+license="GPL-3"
+homepage="https://github.com/PapirusDevelopmentTeam/adapta-kde"
+distfiles="${homepage}/archive/${version}.tar.gz"
+checksum=35d8f314ecbb9a44e23b88d18ec953e871e21fb5c7f13e80ad4d0d1a18b1e969
