@@ -1,0 +1,26 @@
+# Template file for 'kpmcore'
+pkgname=kpmcore
+version=3.3.0
+revision=1
+build_style=cmake
+configure_args="-DBUILD_TESTING=OFF"
+hostmakedepends="extra-cmake-modules python qt5-devel qt5-qmake"
+makedepends="qt5-devel libatasmart-devel libparted-devel kcoreaddons-devel kwidgetsaddons-devel ki18n-devel pkg-config"
+depends="parted"
+short_desc="Library for managing partitions"
+maintainer="jambonmcyeah <jambonmcyeah@gmail.com>"
+license="GPL-2"
+homepage="http://kde.org/applications/system/kdepartitionmanager/"
+distfiles="http://download.kde.org/stable/${pkgname}/${version}/src/${pkgname}-${version}.tar.xz"
+checksum=b8d6fa3c0d89feebf690a424d98ad36acb2438b1099a5b620ee349989d04db68
+
+kpmcore-devel_package() {
+	short_desc+=" - development"
+	depends="${makedepends} ${sourcepkg}>=${version}_${revision}"
+	pkg_install() {
+		vmove usr/include
+		vmove usr/lib/qt5/mkspecs
+		vmove usr/lib/cmake
+		vmove usr/lib/*.so
+	}
+}
