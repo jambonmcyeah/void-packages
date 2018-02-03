@@ -1,7 +1,8 @@
 # Template file for 'gnome-terminal'
 pkgname=gnome-terminal
 version=3.26.2
-revision=1
+revision=2
+patch_args="-Np1"
 lib32disabled=yes
 build_style=gnu-configure
 configure_args="--disable-static --with-nautilus-extension --disable-migration"
@@ -17,3 +18,4 @@ homepage="https://wiki.gnome.org/Apps/Terminal"
 license="GPL-2"
 distfiles="${GNOME_SITE}/$pkgname/${version%.*}/$pkgname-$version.tar.xz"
 checksum=3a9ba414a814569476515275ad303d8056f296b2669234447712559aa97005b0
+
